@@ -17,19 +17,19 @@ function App() {
             emoji="☕" 
             title="Classic Latte" 
             description="Smooth and creamy coffee made with fresh milk." 
-            price="$4.50" 
+            price="4.50" 
           />
           <MenuCard 
             emoji="🥐" 
             title="Fresh Croissant" 
             description="A golden, buttery pastry baked fresh every morning." 
-            price="$3.00" 
+            price="3.00" 
           />
-          <MenuCard ~
+          <MenuCard 
             emoji="🍰" 
             title="Chocolate Cake" 
             description="A rich chocolate dessert for your afternoon break." 
-            price="$5.00" 
+            price="5.00" 
           />
         </div>
       </section>

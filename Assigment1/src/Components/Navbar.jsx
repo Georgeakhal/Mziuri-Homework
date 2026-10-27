@@ -15,7 +15,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav classNameName="navbar">
+    <nav className="navbar">
       <div className="logo">☕ Sunny Side</div>
 
       <ul className="nav-links">

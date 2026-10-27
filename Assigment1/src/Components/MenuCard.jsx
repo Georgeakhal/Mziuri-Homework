@@ -1,7 +1,8 @@
 export default function MenuCards({ emoji, title, description, price }) {
   const handlePurchase = (e) => {
-    e.innerHTML = "Purchased"
-    e.style.background='#1eab0f'
+    console.log(e.innerHTML);
+    e.innerHTML = "Purchased";
+    e.target.style.backgroundColor = "#1eab0f";
   };
 
   return (
@@ -10,14 +11,9 @@ export default function MenuCards({ emoji, title, description, price }) {
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="price">${price}</div>
-      <div className="button">Order Now</div>
-      <button
-        className="button"
-        onClick={handlePurchase}
-        style={{ backgroundColor: isPurchased ? "green" : "#a45e35" }}
-      >
-        {buttonText}
-      </button>
+      <div className="button" onClick={handlePurchase}>
+        Order Now
+      </div>
     </div>
   );
 }
